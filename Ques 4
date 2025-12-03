@@ -1,0 +1,14 @@
+#include <stdio.h>
+
+void show() {
+    static int num = 1;   // static variable
+    printf("Number = %d\n", num);
+    num++;                // increase value by 1
+}
+
+int main() {
+    show();   // first call
+    show();   // second call
+    show();   // third call
+    return 0;
+}
