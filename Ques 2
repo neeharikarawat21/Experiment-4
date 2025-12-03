@@ -1,0 +1,18 @@
+#include <stdio.h>
+
+int main() {
+    
+    int globv = 5;
+
+    void check()
+    {
+        int locv = 3;
+        printf("local variable inside = %d\n",locv);
+    }
+
+     check();
+     //printf("local variable outside = %d\n",lv);
+     printf("global variable outside = %d\n",globv);
+    
+    return 0;
+}
